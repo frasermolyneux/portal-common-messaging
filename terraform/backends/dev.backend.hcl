@@ -1,5 +1,5 @@
 resource_group_name  = "rg-tf-portal-common-messaging-dev-uksouth-01"
-storage_account_name = "sa77f68f8c6092"
+storage_account_name = "saa1f7d4f06004"
 container_name       = "tfstate"
 key                  = "terraform.tfstate"
 use_oidc             = true
