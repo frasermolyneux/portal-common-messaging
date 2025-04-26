@@ -4,6 +4,8 @@
     "azureFunctions.projectRuntime": "~4",
     "azureFunctions.preDeployTask": "publish (functions)",
     "cSpell.words": [
+        "servicebus",
         "XtremeIdiots"
-    ]
+    ],
+    "azureFunctions.projectSubpath": "src\\common-messaging.MessageBroker"
 }
