@@ -6,16 +6,16 @@ resource "azapi_resource" "sp" {
   name     = local.app_service_plan_name
   location = azurerm_resource_group.rg.location
 
-  body = jsonencode({
-    kind = "functionapp",
+  body = {
+    kind = "functionapp"
     sku = {
-      tier = "FlexConsumption",
+      tier = "FlexConsumption"
       name = "FC1"
-    },
+    }
     properties = {
       reserved = false
     }
-  })
+  }
 
   schema_validation_enabled = false
 }
