@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "common_messaging_MessageBroker": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7053",
+      "launchBrowser": false
+    }
+  }
+}

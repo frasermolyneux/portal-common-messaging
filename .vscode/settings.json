@@ -1,0 +1,9 @@
+{
+    "azureFunctions.deploySubpath": "src/bin/Release/net9.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "azureFunctions.preDeployTask": "publish (functions)",
+    "cSpell.words": [
+        "XtremeIdiots"
+    ]
+}
