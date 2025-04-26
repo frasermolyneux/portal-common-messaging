@@ -4,7 +4,7 @@ resource "azapi_resource" "sp" {
   parent_id = azurerm_resource_group.rg.id
 
   name     = local.app_service_plan_name
-  location = azurerm_resource_group.rg.location
+  location = "northeurope" //azurerm_resource_group.rg.location
 
   body = {
     kind = "functionapp"
