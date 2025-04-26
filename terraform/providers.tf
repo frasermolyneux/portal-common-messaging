@@ -6,6 +6,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 4.27.0"
     }
+    azapi = {
+      source  = "azure/azapi"
+      version = "~> 2.3.0"
+    }
   }
 
   backend "azurerm" {}
@@ -22,4 +26,7 @@ provider "azurerm" {
   }
 
   storage_use_azuread = true
+}
+
+provider "azapi" {
 }
