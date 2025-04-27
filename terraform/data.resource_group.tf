@@ -1,3 +1,3 @@
 data "azurerm_resource_group" "core" {
-  name = "rg-portal-core-${var.environment}-${var.location}"
+  name = "rg-portal-core-${var.environment}-${var.location}-01"
 }
