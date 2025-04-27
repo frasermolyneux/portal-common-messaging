@@ -1,21 +1,8 @@
-resource "azapi_resource" "sp" {
-  type = "Microsoft.Web/serverfarms@2023-12-01"
+resource "azurerm_service_plan" "sp" {
+  name                = local.app_service_plan_name
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
 
-  parent_id = azurerm_resource_group.rg.id
-
-  name     = local.app_service_plan_name
-  location = azurerm_resource_group.rg.location
-
-  body = {
-    kind = "functionapp"
-    sku = {
-      tier = "FlexConsumption"
-      name = "FC1"
-    }
-    properties = {
-      reserved = false
-    }
-  }
-
-  schema_validation_enabled = false
+  os_type  = "Linux"
+  sku_name = "Y1"
 }
